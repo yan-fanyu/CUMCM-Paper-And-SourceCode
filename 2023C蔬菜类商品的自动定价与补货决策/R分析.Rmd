@@ -1,0 +1,157 @@
+---
+title: "ARIMA"
+output: html_document
+date: "2023-09-09"
+---
+
+```{r}
+library(readxl)
+library(plyr)
+library(tibble)
+library(forecast)
+library(fUnitRoots)
+library(dplyr)
+library(gam)
+library(splines)
+```
+
+# 读取数据
+```{r}
+xl_data <- "D:/数学建模/CUMCM2023Problems/C题/df3.xlsx"
+excel_sheets(xl_data)
+```
+
+
+# 建立函数
+```{r}
+arima_forecast <- function(data) {
+  # 将时间序列数据转换为ts对象
+  ts_data <- ts(data)
+  
+  # 拟合ARIMA模型
+  arima_model <- auto.arima(ts_data, seasonal = FALSE)
+  
+  # 进行未来时间点的预测
+  forecast_result <- forecast(arima_model, h = 1)
+  
+   # 提取均值、上置信区间和下置信区间
+  forecast_mean <- forecast_result$mean
+  forecast_upper <- forecast_result$upper[, "95%"]
+  forecast_lower <- forecast_result$lower[, "95%"]
+  forecast_lower <- forecast_result$lower[, "95%"]
+  result_row1 <- data.frame(mean = forecast_mean, lower =  forecast_lower, upper = forecast_upper)
+    
+  # 将结果添加到传入的数据框中
+  result_df1 <- rbind(result_df1, result_row1)
+   
+   # 返回更新后的数据框
+  return(result_df1)
+ }
+
+
+
+
+```
+
+```{r}
+df1 <- read_excel(path = xl_data,sheet = 4)
+df2 <- read_excel(path=xl_data,sheet = 5)
+df3<- read_excel(path=xl_data,sheet = 6)
+#my_data_frame_1 <- data.frame()
+#my_data_frame_2 <- data.frame()
+#lapply(df1,arima_forecast)
+
+
+# 将结果转换为数据框
+
+```
+
+
+# 对最后10天销售为0列进行清除
+```{r}
+total_rows <- nrow(df2)
+
+# 选择最后10行
+selected_rows <- (total_rows - 9):total_rows
+
+# 创建一个函数，检查列是否全部为0（除第一列外）
+check_zero <- function(col) {
+  all(col[selected_rows] == 0)
+}
+
+# 应用函数检查每列
+zero_cols <- sapply(df2, check_zero)
+
+# 删除最后10行全部为0的列（除第一列外）
+df2 <- df2[, c(!zero_cols)]
+df1 <- df1[,colnames(df2)]
+```
+
+
+#对剩下单品进行时序预测
+```{r}
+result_df1 <- data.frame()
+lapply(df1[,c(-1)], arima_forecast)
+```
+
+
+
+
+
+
+#对销量和总利润进行多项式样条拟合
+
+```{r}
+result_df <- data.frame()
+set.seed(11221)
+# 获取列名
+common_cols <- colnames(df1[,c(-1)])
+
+  # 使用样条插值对数据进行平滑
+for (col_name in common_cols) {
+  # 从 df1 和 df2 中提取当前列的数据，并分别命名为 x 和 y
+  x <- as.vector(df1[, col_name])[[1]]
+  y <- as.vector(df2[, col_name])[[1]]
+  
+  # 使用 GAM 拟合数据
+  gam_formula <- as.formula(paste("y ~ s(x)", sep = ""))
+  gam_model <- gam(gam_formula, data = data.frame(x = x, y = y))
+  
+  # 从 df3 中提取对应的两个值
+  value1 <- df3[, col_name][[1]][1]
+  value2 <- df3[, col_name][[1]][2]
+  # 划分区间为20份
+  interval_values <- seq(value1, value2, length.out = 20)  # 22点分成20段
+  
+  # 生成一个随机扰动
+  a <- runif(1,min=-0.1,max=0.2)
+    # 使用样条模型对每个区间进行预测
+  prediction_df1 <- predict(gam_model,newdata=data.frame(x=interval_values),type="response")
+  product <- prediction_df1 
+    
+    # 找到最大值所在的索引
+  max_index <- which.max(product)
+  max_profit<- prediction_df1[max_index]
+  max_value <- interval_values[max_index]
+    
+    # 创建一个数据框用于存储结果
+  result_row <- data.frame(Column_Name = col_name, Max_Product = max_value,Max_profit=max_profit)
+    
+    # 将结果添加到最终的数据框中
+  result_df <- rbind(result_df, result_row)
+}
+
+```
+
+```{r}
+sorted_index <- order(result_df$Max_profit, decreasing = TRUE)
+
+# 使用索引重新排列数据框
+result_df <- result_df[sorted_index, ]
+```
+#保存数据
+```{r}
+rownames(result_df) <- NULL
+write.csv(result_df,"dm8.csv")
+```
+

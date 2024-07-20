@@ -1,0 +1,22 @@
+
+Network Performance
+
+File:     d:\mathmode\2016\example1.inp
+Comment:  
+Date:     2022Äê7ÔÂ10ÈÕ 8:11:21
+
+Simulation time from 0.0 to 3600.0.
+
+ Parameter                                                             ;          Value;
+ Average delay time per vehicle [s], All Vehicle Types                 ;         11.152;
+ Average delay time per vehicle [s], All Vehicle Types                 ;         11.152;
+ Average number of stops per vehicles, All Vehicle Types               ;          0.259;
+ Average speed [km/h], All Vehicle Types                               ;         37.279;
+ Average stopped delay per vehicle [s], All Vehicle Types              ;          8.486;
+ Total delay time [h], All Vehicle Types                               ;          2.912;
+ Total Path Distance [km], All Vehicle Types                           ;        369.133;
+ Number of Stops, All Vehicle Types                                    ;        243;
+ Number of vehicles in the network, All Vehicle Types                  ;         12;
+ Number of vehicles that have left the network, All Vehicle Types      ;        928;
+ Total stopped delay [h], All Vehicle Types                            ;          2.216;
+ Total travel time [h], All Vehicle Types                              ;          9.902;

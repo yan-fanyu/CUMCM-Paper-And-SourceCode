@@ -1,0 +1,80 @@
+%导言区
+\documentclass[11pt, twoside, a4paper]{article} %book，report,letter
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage[top = 2cm, bottom=0cm, left=2cm, right = 2cm]{geometry}
+\usepackage{color}
+
+\usepackage[UTF8]{ctex}
+
+\begin{document}  
+	\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+	\renewcommand{\algorithmicensure}{\textbf{Output:}}
+	\begin{algorithm}[h]
+		\renewcommand{\thealgorithm}{1}
+		\caption{最小二乘法求温度}
+		\begin{algorithmic}[1]
+			\Require
+			$G$: $Time, Temp$
+			\textcolor{blue}{\Comment{导入附件里的时间和温度}}
+			\Ensure
+			$P$: [he hp T] 
+			\textcolor{blue}{\Comment{系数1 系数2 温度分布}}
+			% 赋值语句
+			\Function{GetTemperature}{}
+			\State $He = [0, 200]$
+			\State $Hp = [0, 10]$
+			\For{each $he$ in $He$ step = 0.5}
+				\For{each $hp$ in $Hp$ step = 0.005}
+					\For{each $t$ in $Time$ step = 1}
+						\For{each $x$ in $Layer1$}
+							\State Calculate T(x, t)
+							\textcolor{blue}{\Comment{t时刻x位置处的温度}}
+						\EndFor
+						
+						\For{each $x$ in $Layer2$}
+							\State Calculate T(x, t)
+						\EndFor
+						
+						\For{each $x$ in $Layer3$}
+							\State Calculate T(x, t)
+						\EndFor
+						
+						\For{each $x$ in $Layer4$}
+							\State Calculate T(x, t)
+						\EndFor
+				
+				\State Error = $\sum_{i=0}^{5400}$ $(Temp(i) - T(end, i))^2  $\textcolor{blue}{\Comment{误差}}
+				
+				
+				
+			
+			\EndFor
+			\EndFor\
+			\EndFor
+			\State Find the index of minimum Error
+			\textcolor{blue}{\Comment{得到误差最小的索引}}
+			\State  P =[He(index) Hp(index) T(index)]
+			\textcolor{blue}{\Comment{误差最小的he、hp和温度分布T}}
+			\State \Return P
+			
+			\EndFunction
+		\end{algorithmic}
+	\end{algorithm}
+\end{document}   %环境结束
+
+
+
+
+
+
+
+
+
+
+
+
+

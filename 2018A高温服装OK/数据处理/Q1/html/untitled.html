@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>untitled</title><meta name="generator" content="MATLAB 9.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-09-08"><meta name="DC.source" content="untitled.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput">clc;clear;close <span class="string">all</span>;
+<span class="comment">%  [FJ2,FJ2_text]=xlsread('A.xlsx','&#38468;&#20214;2');</span>
+<span class="comment">% T0=FJ2(:,2); %&#21021;&#22987;&#21508;&#28857;&#30340;&#28201;&#24230;&#65292;T0(1)&#26159;0&#26102;&#30340;&#28201;&#24230;</span>
+<span class="comment">%  save FJ_2</span>
+ load <span class="string">FJ_2.mat</span>
+<span class="comment">%&#26377;&#38480;&#24046;&#20998;&#27861;&#65292;&#38544;&#24335;</span>
+arg_min=1e6;
+L1=0.6;L2=6;L3=3.6;L4=5;
+T_en=75;tt=5400;
+h2=8.374;
+<span class="keyword">for</span> h1=116:0.01:118
+[T]=qiujie(L1,L2,L3,L4,h1,h2,T_en,tt);
+TT=[FJ2(:,1),T(end,:)'];<span class="comment">%&#27169;&#25311;&#20154;&#30340;&#28201;&#24230;&#21464;&#21270;</span>
+arg=norm(TT(:,2)-FJ2(:,2))^2;
+<span class="keyword">if</span> arg&lt;arg_min
+    arg_min=arg;
+    h_1=h1;
+    h_2=h2;
+    TT_2=TT;
+<span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">%&#25311;&#21512;&#20248;&#24230;&#35745;&#31639;</span>
+SST=norm(FJ2(:,2)-mean(FJ2(:,2)))^2;
+SSE=arg_min;
+R=1-SSE/SST;
+<span class="comment">%&#32472;&#22270;</span>
+figure(<span class="string">'Color'</span>,<span class="string">'w'</span>)
+plot(1:5401,TT_2(:,2),<span class="string">'b'</span>,<span class="string">'LineWidth'</span>,1.5);
+hold <span class="string">on</span>
+plot(1:5401,FJ2(:,2),<span class="string">'r:'</span>,<span class="string">'LineWidth'</span>,1.5);
+legend(<span class="string">'&#27169;&#25311;&#20540;'</span>,<span class="string">'&#23454;&#39564;&#20540;'</span>)
+xlabel(<span class="string">'&#26102;&#38388;(&#31186;)'</span>);ylabel(<span class="string">'&#28201;&#24230;(&#25668;&#27663;&#24230;)'</span>)
+</pre><img vspace="5" hspace="5" src="untitled_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2021b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+clc;clear;close all;
+%  [FJ2,FJ2_text]=xlsread('A.xlsx','附件2');
+% T0=FJ2(:,2); %初始各点的温度，T0(1)是0时的温度
+%  save FJ_2
+ load FJ_2.mat
+%有限差分法，隐式
+arg_min=1e6;
+L1=0.6;L2=6;L3=3.6;L4=5;
+T_en=75;tt=5400;
+h2=8.374;
+for h1=116:0.01:118
+[T]=qiujie(L1,L2,L3,L4,h1,h2,T_en,tt);
+TT=[FJ2(:,1),T(end,:)'];%模拟人的温度变化
+arg=norm(TT(:,2)-FJ2(:,2))^2;
+if arg<arg_min
+    arg_min=arg;
+    h_1=h1;
+    h_2=h2;
+    TT_2=TT;
+end
+end
+%拟合优度计算
+SST=norm(FJ2(:,2)-mean(FJ2(:,2)))^2;
+SSE=arg_min;
+R=1-SSE/SST;
+%绘图
+figure('Color','w')
+plot(1:5401,TT_2(:,2),'b','LineWidth',1.5);
+hold on
+plot(1:5401,FJ2(:,2),'r:','LineWidth',1.5);
+legend('模拟值','实验值')
+xlabel('时间(秒)');ylabel('温度(摄氏度)')
+##### SOURCE END #####
+--></body></html>

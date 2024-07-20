@@ -1,0 +1,177 @@
+import numpy as np
+import pandas as pd
+import time
+import tensorflow.compat.v1 as tf  # 本行报错不用处理
+
+tf.disable_v2_behavior()
+
+# 图网络 和 生成对抗网络
+
+IN_DIV = 24  # 输入维度
+OUT_DIV = 4  # 输出维度
+
+nIter = 10000  # 迭代次数为 10000 次
+speed = 0.08
+N = 100         # 每层神经元个数
+
+NATrain = 25    # 每一类的训练样本数
+NBTrain = 25
+NCTrain = 30
+NDTrain = 20
+
+NATest = 2  # 每一类的测试样本数
+NBTest = 13
+NCTest = 4
+NDTest = 4
+
+# 数据集导入
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
+
+train = np.array(train)
+test = np.array(test)
+
+def noramlization(data):
+    minVals = data.min(0)
+    maxVals = data.max(0)
+    ranges = maxVals - minVals
+    normData = np.zeros(np.shape(data))
+    m = data.shape[0]
+    normData = data - np.tile(minVals, (m, 1))
+    normData = normData/np.tile(ranges, (m, 1))
+    return normData, ranges, minVals
+
+
+
+
+
+
+A_train = train[0:NATrain, :]
+B_train = train[NATrain:NATrain+NBTrain, :]
+C_train = train[NATrain+NBTrain:NATrain+NBTrain+NCTrain, :]
+D_train = train[NATrain+NBTrain+NCTrain:, :]
+
+A_test = test[0:NATest, :]
+B_test = test[NATest:NATest+NBTest, :]
+C_test = test[NATest+NBTest:NATest+NBTest+NCTest, :]
+D_test = test[NATest+NBTest+NCTest:, :]
+
+
+# 数据格式化
+X_train = np.vstack((A_train, B_train, C_train, D_train))
+
+X_test = np.vstack((A_test, B_test, C_test, D_test))
+
+
+train_label = np.matrix([[1, 0, 0, 0]] * NATrain + [[0, 1, 0, 0]] * NBTrain + [[0, 0, 1, 0]] * NCTrain + \
+                        [[0, 0, 0, 1]] * NDTrain)
+
+test_label  = np.matrix([[1, 0, 0, 0]] * NATest + [[0, 1, 0, 0]] * NBTest + [[0, 0, 1, 0]] * NCTest + \
+                        [[0, 0, 0, 1]] * NDTest)
+
+print(test_label)
+
+'''
+我们采用三层前向神经网络来优化这个任务, 其中每层的神经元个数取20, 
+初始化取 xavier initialization,优化处理器取 GradientDescentOptimizer, 
+学习率取 0.001, 激活函数选取 sigmoid 函数, 迭代次数为 1000.
+'''
+
+layers = [IN_DIV, N, N, N, OUT_DIV]  # 输入层 2 个维度，中间层为 3 层，每层 20 个神经元，输出层维度为 5，因为要分为 5 类
+
+# define neural network structure
+
+# tf.palceholder
+x_tf = tf.placeholder(tf.float32, shape=[None, X_train.shape[1]])
+y_tf = tf.placeholder(tf.float32, shape=[None, train_label.shape[1]])
+
+
+def initialize_NN(layers):
+    weights = []  # 权重矩阵
+    biases = []  # 截距矩阵          Y = W*X + b
+    num_layers = len(layers)
+    for l in range(0, num_layers - 1):
+        W = xavier_init(size=[layers[l], layers[l + 1]])
+        b = tf.Variable(tf.zeros([1, layers[l + 1]], dtype=tf.float32), dtype=tf.float32)
+        weights.append(W)
+        biases.append(b)
+    return weights, biases
+
+
+def xavier_init(size):
+    in_dim = size[0]  # 第 n 层的维度
+    out_dim = size[1]  # 第 n+1 层的维度
+    xavier_stddev = np.sqrt(2 / (in_dim + out_dim))  # 使用 xavier 对权重进行初始化
+    return tf.Variable(tf.truncated_normal([in_dim, out_dim], stddev=xavier_stddev), dtype=tf.float32)
+
+
+# 定义神经网络
+def neural_net(X, weights, biases):
+    num_layers = len(weights) + 1  # 神经网络层数
+    H = X
+    for l in range(0, num_layers - 2):
+        W = weights[l]
+        b = biases[l]
+        H = tf.sigmoid(tf.add(tf.matmul(H, W), b))
+    W = weights[-1]
+    b = biases[-1]
+    Y = tf.add(tf.matmul(H, W), b)
+    return Y
+
+
+in_weights, in_biases = initialize_NN(layers)
+
+
+def net(X):
+    h = neural_net(X, in_weights, in_biases)
+    return h
+
+
+output = net(x_tf)
+
+# loss
+y_model = tf.nn.softmax(output)
+loss = -tf.reduce_sum(y_tf * tf.log(y_model))
+correct_prediction = tf.equal(tf.argmax(y_model, 1), tf.argmax(y_tf, 1))
+
+accuracy = 0
+
+# Optimization
+
+# 10000 100 0.08
+optimizer_GradientDescent = tf.train.GradientDescentOptimizer(speed)
+train_op_Adam = optimizer_GradientDescent.minimize(loss)
+
+# tf session
+
+sess = tf.Session()
+init = tf.global_variables_initializer()
+sess.run(init)
+
+tf_dict = {x_tf: X_train, y_tf: train_label}
+start_time = time.time()
+for it in range(nIter):
+    sess.run(train_op_Adam, tf_dict)
+
+    # Print
+    if it % 1000 == 0:
+        elapsed = time.time() - start_time
+        loss_value = sess.run(loss, tf_dict)
+        print('It: %d, Loss: %.7e, Time: %.2f' % (it, loss_value, elapsed))
+        start_time = time.time()
+
+
+for i in range(23):
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+    XX = [[]]
+    XX[0] = X_test[i]
+    X = XX
+    Y = test_label[i]
+    a = sess.run(accuracy, feed_dict={x_tf: X, y_tf: Y})
+    if a==1:
+        print(i+1)
+
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+accuracy = sess.run(accuracy, feed_dict={x_tf: X_test, y_tf: test_label})
+print(accuracy)
+

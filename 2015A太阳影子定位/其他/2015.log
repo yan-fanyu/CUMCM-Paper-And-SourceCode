@@ -1,0 +1,641 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2022.4.4)  31 JUL 2022 16:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**2015.tex
+(./2015.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/article.
+cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/size11.c
+lo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/algorithms/al
+gorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/float/float.s
+ty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count175
+\float@exts=\toks15
+\float@box=\box45
+\@float@everytoks=\toks16
+\@floatcapt=\box46
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/ifthen.s
+ty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks17
+\c@algorithm=\count176
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/algorithmicx/
+algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count177
+\c@ALG@rem=\count178
+\c@ALG@nested=\count179
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
+\c@ALG@Lnr=\count180
+\c@ALG@blocknr=\count181
+\c@ALG@storecount=\count182
+\c@ALG@tmpcounter=\count183
+\ALG@tmplength=\skip51
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/algorithmicx/
+algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/amsmath/amsma
+th.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/amsmath/amste
+xt.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/amsmath/amsge
+n.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen135
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/amsmath/amsbs
+y.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/amsmath/amsop
+n.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks19
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks20
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/tools/verbati
+m.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks23
+\verbatim@line=\toks24
+\verbatim@in@stream=\read2
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/geometry/geom
+etry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/graphics/keyv
+al.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/generic/iftex/ifvte
+x.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/generic/iftex/iftex
+.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks26
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/graphics/colo
+r.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/graphics-cfg/
+color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/graphics-def/
+pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/ctex.sty
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/l3kernel/expl
+3.sty
+Package: expl3 2020-03-06 L3 programming layer (loader) 
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/l3backend/l3b
+ackend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count199
+\l__pdf_internal_box=\box49
+))
+Package: ctex 2019/05/29 v2.4.16 Chinese adapter in LaTeX (CTEX)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/l3packages/xp
+arse/xparse.sty
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count266
+\g__xparse_grabber_int=\count267
+\l__xparse_m_args_int=\count268
+\l__xparse_v_nesting_int=\count269
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/l3packages/l3
+keys2e/l3keys2e.sty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/ctexhook
+.sty
+Package: ctexhook 2019/05/29 v2.4.16 Document and package hooks (CTEX)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/ctexpatc
+h.sty
+Package: ctexpatch 2019/05/29 v2.4.16 Patching commands (CTEX)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/fix-cm.s
+ty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/ts1enc.d
+ef
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ms/everysel.s
+ty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\l__ctex_tmp_int=\count270
+\l__ctex_tmp_box=\box50
+\l__ctex_tmp_dim=\dimen152
+\g__ctex_section_depth_int=\count271
+\g__ctex_font_size_int=\count272
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/config/c
+texopts.cfg
+File: ctexopts.cfg 2019/05/29 v2.4.16 Option configuration file (CTEX)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/engine/c
+tex-engine-pdftex.def
+File: ctex-engine-pdftex.def 2019/05/29 v2.4.16 (pdf)LaTeX adapter (CTEX)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJKutf8.sty
+Package: CJKutf8 2015/04/18 4.8.4
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf
+.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/inputenc
+.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJK.sty
+Package: CJK 2015/04/18 4.8.4
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+mule/MULEenc.sty
+Package: MULEenc 2015/04/18 4.8.4
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJK.enc
+File: CJK.enc 2015/04/18 4.8.4
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+LaTeX Info: Redefining \selectfont on input line 755.
+\CJK@indent=\box51
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/base/fontenc.
+sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjkpunct/CJKp
+unct.sty
+Package: CJKpunct 2016/05/14 4.8.4
+\CJKpunct@cnta=\count273
+\CJKpunct@cntb=\count274
+\CJKpunct@cntc=\count275
+\CJKpunct@cntd=\count276
+\CJKpunct@cnte=\count277
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2026 (decimal 8230)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjkpunct/CJKp
+unct.spa))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJKspace.sty
+Package: CJKspace 2015/04/18 3.8.0
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/ctexspa.
+def
+File: ctexspa.def 2019/05/29 v2.4.16 Space info for CJKpunct (CTEX)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJKfntef.sty
+Package: CJKfntef 2015/04/18 4.8.4
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+CJKulem.sty
+Package: CJKulem 2015/04/18 4.8.4
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/generic/ulem/ulem.s
+ty
+\UL@box=\box52
+\UL@hyphenbox=\box53
+\UL@skip=\skip55
+\UL@hook=\toks29
+\UL@height=\dimen153
+\UL@pe=\count278
+\UL@pixel=\dimen154
+\ULC@box=\box54
+Package: ulem 2019/11/18
+\ULdepth=\dimen155
+)
+\UL@lastkern=\dimen156
+\CJK@skip=\skip56
+)
+\CJK@fntefSkip=\skip57
+\CJK@nest=\count279
+\CJK@fntefDimen=\dimen157
+\CJK@underdotBox=\box55
+\CJK@ULbox=\box56
+\CJK@underanyskip=\dimen158
+)
+\ccwd=\dimen159
+\l__ctex_ccglue_skip=\skip58
+)
+\l__ctex_ziju_dim=\dimen160
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/zhnumber/zhnu
+mber.sty
+Package: zhnumber 2019/04/07 v2.7 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count280
+\l__zhnum_byte_min_int=\count281
+\l__zhnum_byte_max_int=\count282
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/zhnumber/zhnu
+mber-utf8.cfg
+File: zhnumber-utf8.cfg 2019/04/07 v2.7 Chinese numerals with UTF8 encoding
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/scheme/c
+tex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2019/05/29 v2.4.16 Chinese scheme for generic (CT
+EX)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/config/c
+tex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2019/05/29 v2.4.16 Caption with encoding UTF8 (CTEX)
+))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/tools/indentf
+irst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/fontset/
+ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2019/05/29 v2.4.16 Windows fonts definition (CTE
+X)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/fontset/
+ctex-fontset-windowsnew.def
+File: ctex-fontset-windowsnew.def 2019/05/29 v2.4.16 Windows fonts definition f
+or Vista or later version (CTEX)
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/generic/ctex/zhwind
+owsfonts.tex
+File: zhwindowsfonts.tex 2019/05/29 v2.4.16 Windows font map loader for pdfTeX 
+and DVIPDFMx (CTEX)
+{f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-var/fonts/map/pdftex/updmap/
+pdftex.map}{UGBK.sfd}{Unicode.sfd}))))
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/config/c
+tex.cfg
+File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+UTF8/UTF8.bdg
+File: UTF8.bdg 2015/04/18 4.8.4
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+UTF8/UTF8.enc
+File: UTF8.enc 2015/04/18 4.8.4
+)
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/cjk/texinput/
+UTF8/UTF8.chr
+File: UTF8.chr 2015/04/18 4.8.4
+) (./2015.aux)
+\openout1 = `2015.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 788.14134pt, 0.0pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=788.14134pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=103.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/context/base/mkii/s
+upp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen161
+\scratchbox=\box57
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen162
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks31
+) ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 13.
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 18
+.
+
+(f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/tex/latex/ctex/fd/c70rm
+.fd
+File: c70rm.fd 2019/05/29 v2.4.16 Chinese font definition (CTEX)
+)
+Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
+quanjiao) on input line 61.
+ [1
+
+] (./2015.aux) ) 
+Here is how much of TeX's memory you used:
+ 6615 strings out of 480608
+ 116198 string characters out of 5893789
+ 361646 words of memory out of 5000000
+ 22300 multiletter control sequences out of 15000+600000
+ 543245 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,5n,52p,472b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/W
+indows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.t
+tc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
+simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
+s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
+:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
+n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
+ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
+dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
+><f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb><f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmcsc10.pfb><f:/ProgramSoftware/Texlive2020/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><f:/ProgramSoftware/
+Texlive2020/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><f:/ProgramSoftware/Texlive2020/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><f:/ProgramSoftware/Texlive2020/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><f:/ProgramSoftware/Texlive
+2020/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><f:/Progra
+mSoftware/Texlive2020/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb>
+Output written on 2015.pdf (1 page, 196899 bytes).
+PDF statistics:
+ 165 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+

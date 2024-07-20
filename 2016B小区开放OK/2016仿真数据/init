@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>window.host={"HOST_PAN":"pan.baidu.com","HOST_D_PCS":"d.pcs.baidu.com","HOST_C_PCS":"c.pcs.baidu.com","HOST_NEST":"yq01nest.pcs.baidu.com","HOST_PCS_DATA":"pcsdata.baidu.com","HOST_PCS":"pcs.baidu.com","HOST_BAIDU_PCS":"baidupcs.com","HOST_THUMBNAIL":"thumbnail.baidupcs.com","PASS_TPL":"netdisk","SOURCE_VALUE":"10"}</script>
+        <title>百度网盘 请输入提取码</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta http-equiv="Cache-Control" content="max-age=30"/>
+        <meta name="renderer" content="origin"/>
+        <meta name="baidu-tc-verification" content="b31ebb7c3759312418b3645de4991aef"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
+        <meta name="keywords" content="网盘,百度网盘,百度云,网络U盘,网络硬盘,免费网盘,网盘下载,网盘资源,同步,云存储,外链分享,离线下载"/>
+        <meta name="description" content="百度网盘为您提供文件的网络备份、同步和分享服务。空间大、速度快、安全稳固，支持教育网加速，支持手机端。注册使用百度网盘即可享受免费存储空间"/>
+        <link rel="dns-prefetch" href="//pcs.baidu.com"/>
+        <link rel="dns-prefetch" href="//pcsdata.baidu.com"/>
+        <link rel="dns-prefetch" href="//passport.baidu.com"/>
+        <link rel="dns-prefetch" href="//yun.baidu.com"/>
+        <link rel="dns-prefetch" href="//d.pcs.baidu.com"/>
+        <link rel="dns-prefetch" href="//c.pcs.baidu.com"/>
+        <link rel="dns-prefetch" href="//webpush.pan.baidu.com"/>
+        <link rel="dns-prefetch" href="//hm.baidu.com"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/m-static/base/static/images/favicon.ico"/>
+        <style>
+            html{font-feature-settings:"lnum";-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,textarea,select,optgroup,option,fieldset,legend,p,blockquote,th,td{margin:0;padding:0}body{background:#fff;font-family:PingFangSC-Regular,"Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft YaHei"}fieldset,img{border:0}ul,li,ol{list-style:none}h1,h2,h3,h4,h5,h6{font-size:100%}legend{color:#000}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}input,button,select{margin:0;*font-size:100%;line-height:1.2}a{color:#09AAFF;text-decoration:none}a img,img{-ms-interpolation-mode:bicubic}a:hover,a:active,a:focus{color:#0098EA;text-decoration:underline}table{border-collapse:collapse;border-spacing:0}header,aside,section{display:block}input::-ms-clear{display:none}#TANGRAM__PSP_10__qrcode .tips{margin-top:10px;text-align:center;font-size:12px;color:#999}p.Qrcode-status-animation{background:url(https://nd-static.bdstatic.com/m-static/base/static/images/app-intr-bg_99e9d55.png) no-repeat center}body,button,input,select,textarea{font-size:12px;line-height:1.5;color:#666}a{color:#09AAFF;text-decoration:none;outline:0}a:hover,a:active,a:focus{color:#0098EA;text-decoration:underline}.global-clearfix:after,.g-clearfix:after{content:'.';display:block;visibility:hidden;height:0;line-height:0;font-size:0;clear:both}.global-clearfix,.g-clearfix{zoom:1}.global-clear,.g-clear{clear:both}.global-hide,.g-hide{display:none}.global-bold,.g-bold{font-weight:700}.global-center,.g-center{text-align:center}.global-float-left,.g-float-left{float:left}.global-float-right,.g-float-right{float:right}.global-ellipsis,.g-ellipsis{word-break:break-all;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.global-disabled,.global-disabled:hover,.global-disabled:active,.g-disabled,.g-disabled:hover,.g-disabled:active{filter:alpha(opacity=50);-ms-filter:"alpha(opacity=50)";opacity:.5;color:#ccc;cursor:default!important}.global-border-radius-3,.g-border-radius-3{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}.global-box-shadow,.g-box-shadow{-moz-box-shadow:1px 2px 5px rgba(0,0,0,.5);-webkit-box-shadow:1px 2px 5px rgba(0,0,0,.5);box-shadow:1px 2px 5px rgba(0,0,0,.5)}
+        </style>
+        
+    <script>
+        if (window.performance && window.performance.now && typeof window.performance.now === 'function') {
+            window.__perf_white_screen = performance.now();
+        }
+    </script>
+    <!--[if !IE]><!-->
+    <script type="text/javascript" src="https://staticiot.cdn.bcebos.com/union/badjs-sdk-min-2.0.1.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="https://staticiot.cdn.bcebos.com/union/bpdatajs-sdk-min-1.3.3.js"></script>
+    <script>
+        if (window.BadJs) {
+            var HOST_PAN = ((window.host && window.host.HOST_PAN) || 'pan.baidu.com');
+            window.BadSDK = new BadJs({
+                host: 'https://' + HOST_PAN, path: '/bpapi/analytics', namespace: 'netdisk_share',
+                productId: '100710', rules: {path: true, hash: false}, clienttype: 0, promiseError: false,
+                vueError: false, env: window, downgrade: {
+                    error: {p2: [/Script error/, /chrome-extension/, /moz-extension/]},
+                    resource: {p2: [/hm.baidu.com/, /webpush.pan.baidu.com/]}}
+            });
+        }
+    </script>
+    <script>
+        if (window.BpData) {
+            window.BpDataInstance = new BpData({
+                serverId: 13328,
+                from: 'main',
+                page: 'share_common_page',
+                parasitifer: 'web'
+            })
+        }
+    </script>
+    
+    
+    
+    
+    <style type="text/css">
+        #doc{background-color: #eef2f6;position: absolute;width: 100%;height: 100%;}
+    </style>
+    <script>window.SHAREPAGETYPE = 'init';</script>
+
+
+    <link rel="stylesheet" href="https://nd-static.bdstatic.com/m-static/system-core/pkg/context-all_c27a0bc.css" /><link rel="stylesheet" href="https://nd-static.bdstatic.com/m-static/disk-share/css/cover_8d0eea2.css" /><link rel="stylesheet" href="https://nd-static.bdstatic.com/m-static/disk-share/pkg/single-all_6c63a1c.css" /><link rel="stylesheet" href="https://nd-static.bdstatic.com/m-static/disk-share/pkg/init-all_47d6f7d.css" /></head>
+    
+    <body >
+        
+    
+
+    
+    
+    <div class="docs init-docs" id="doc">
+        <a href="" class="phone-banner"></a>
+        <div class="acss-header" id="oqyeJak">
+    <div class="acss_banner"></div>
+    <div class="verify-form">
+        <form action="" class="clearfix" name="accessForm" onsubmit="return false">
+            
+            <div class="CMxQsC">
+            
+            <div class="avatar">
+                <div class="photo-frame theme-share-head">
+                    <span class="radius-3">
+                        <img alt="t**78" onload="if(this.offsetHeight>this.offsetWidth){this.style.height='44px';this.style.width='auto';}" src="https://himg.bdimg.com/sys/portrait/item/public.1.2fb25fab.i2ij0YPDJvOPpITOTB03Uw.jpg" width="44">
+                        <span class="cert-info"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="verify-property">
+                <div class="verify-user theme-share-text">
+                    <div class="username theme-share-name">t**78</div>
+                    <div class="enterprise theme-share-name">t**78</div>
+                    <div class="enterprise-right">
+                        <span class="right-icon"></span>
+                    </div>
+                    <span class="verify-user-avatar">
+                        
+                        <a href="//yun.baidu.com/buy/center?tag=8&from=sicon" class="v-icon unvip-icon"><em></em></a>
+                        
+                    </span>
+                    <div class="verify-user-protect-share limit-share-lock-icon icon icon-share-lock" style="display: none"><span class="verify-user-protect-share-text">密享</span></div>
+                </div>
+                <div class="author-desc theme-share-name"></div>
+            </div>
+            <div class="enterprise-card-mini">
+                <!-- 企业名片 -->
+                <div class="ent-card">
+                    <div class="icon phone"></div>
+                    <div class="icon email"></div>
+                    <div class="icon address"></div>
+                </div>
+                <!-- 员工名片 -->
+                <div class="staff-card">
+                    <div class="icon phone"></div>
+                    <div class="icon wechat"></div>
+                    <div class="icon email"></div>
+                </div>
+            </div>
+            <div class="verify-btn">
+                
+                
+                
+                    <div class="verify-friend theme-share-name-hover">加为好友</div>
+                
+            </div>
+            <div class="cb"></div>
+            </div>
+            <div class="verify-memo">
+                <div class="verify-memo-container">
+                    <span class="verify-memo-text"></span>
+                </div>
+            </div>
+            <div class="verify-input ac-close clearfix">
+                <dl class="pickpw clearfix">
+                    <dt>请输入提取码：</dt>
+                    <dd class="clearfix input-area">
+                        <input class="QKKaIE LxgeIt" id="accessCode" tabindex="1" type="text">
+                        <div id="submitBtn">
+                            <a class="submit-a g-button-blue-large" href="javascript:;" title="提取文件">
+                                <span class="g-button-right">
+                                    <span class="text submit-btn-text" style="width: auto;">提取文件</span>
+                                </span>
+                            </a>
+                        </div>
+                    </dd>
+                    </dl>
+                <dl class="pickcode clearfix">
+                    <dt>验证码：</dt>
+                    <dd class="clearfix">
+                        <input class="LIztsC QKKaIE" autofocus="autofocus" id="qhhiy8ly" tabindex="2" type="text">
+                        <img alt="验证码" id="zvfhyMwk"><a class="change-code" href="javascript:;">换一张</a>
+                    </dd>
+                </dl>
+                <div class="verify-desc-protect-share limit-share-limit-num" style="display: none">
+                    <div class="verify-desc-protect-share-limit"><span class="verify-desc-protect-share-limit-show"></span>人已访问，限<span class="verify-desc-protect-share-limit-num"></span>人</div>
+                </div>
+            </div>
+        </form>
+        <div id="jmseqzy" class="tip" style="display: block;"></div>
+        <div class="cert-tip">了解企业认证</div>
+    </div>
+</div>
+
+        <div class="cloud-bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+        </div>
+    </div>
+    
+
+
+    
+    
+    <div class="module-share-footer" id="ft">
+        <div>&copy;2022 Baidu <a target="_blank" href="/disk/duty/">服务协议</a>|<a target="_blank" href="//yun.baidu.com/disk/privacy">权利声明</a>|<a href="//yun.baidu.com/disk/version" target="_blank">版本更新</a>|<a target="_blank" href="http://yun.baidu.com/disk/help">帮助中心</a>|<a target="_blank" href="http://qingting.baidu.com/index?pid=19">问题反馈</a>|<a href="http://copyright.baidu.com/index.php/index/complaint" target="_blank">版权投诉</a>|<a target="_blank" id="panHostBase" class="b-lnk-gy" >企业认证</a></div>
+    </div>
+    
+    <script>
+        var HOST_PAN = ((window.host && window.host.HOST_PAN) || 'pan.baidu.com');
+        document.querySelector('#panHostBase').href = '//' + HOST_PAN + '/disk/cert/#/web/home?from=shareFooter';
+    </script>
+
+    
+    
+
+    <script type="text/javascript" src="https://nd-static.bdstatic.com/m-static/base/static/js/lib/mod.js?t=1656991399993"></script><script type="text/javascript">require.resourceMap({"res":{"disk-share:widget/system/verifyCodeDialog/verifyUser.min.js":{"url":"https://nd-static.bdstatic.com/m-static/disk-share/widget/system/verifyCodeDialog/verifyUser.min_9f76080.js","pkg":"disk-share:p0"}},"pkg":{"disk-share:p0":{"url":"https://nd-static.bdstatic.com/m-static/disk-share/pkg/async-all_cb994bd.js"}}});</script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/base/pkg/base_4acea84.js"></script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/system-core/pkg/context-all_e30dff1.js"></script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/disk-share/js/boot_e3992d7.js"></script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/disk-header/disk.header.1656481342674.js?t=1656481342668"></script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/disk-share/pkg/common-chunks-all_8dc3a40.js"></script><script type="text/javascript" crossorigin="anonymous"  src="https://nd-static.bdstatic.com/m-static/disk-share/pkg/init-all_00fee35.js"></script><script type="text/javascript">!function() {
+        window.yunData={skinName:'white', neglect:1, bdstoken:'', uk:'0', loginstate:'0', share_uk:"2433149263", shareid:"267226899"};
+        locals.set('servertime', 1657412086649);
+        locals.mset({"csrf":"r1RLDh21-hxxaziUdNswLtNXb-9pUYJLHILI","uk":0,"username":"","loginstate":0,"skinName":"white","bdstoken":"","photo":"","is_vip":0,"is_svip":0,"is_evip":0,"now":"2022-07-10T00:14:46.649Z","XDUSS":"","curr_activity_code":0,"show_vip_ad":0,"share_photo":"https://himg.bdimg.com/sys/portrait/item/public.1.2fb25fab.i2ij0YPDJvOPpITOTB03Uw.jpg","share_uk":"2433149263","shareid":267226899,"followFlag":-1,"access_list_flag":false,"Elink_info":{"isElink":0,"eflag_disable":false},"owner_vip_level":1,"owner_vip_type":0,"linkusername":"t**78","errortype":-1,"errno":0,"ufcTime":217});
+        window.BadSDK && window.BadSDK.updateConfig({ 
+            uk: locals.get('uk'),
+            sessionId: window.BpDataInstance && window.BpDataInstance.sessionId
+        });
+    }();
+!function() {
+        require('disk-share:widget/pageModule/start/init.js');
+    }();</script></body>
+    
+    <script async defer type="text/javascript" src="https://hm.baidu.com/h.js?7a3960b6f067eb0085b7f96ff5e660b0"></script>
+</html>
+

@@ -1,0 +1,10 @@
+cell={‘PLS’,’SVM’,’RF’,’NNET’,’NB’,’PLR’,’C5.0′,’PDA’,’KNN’,’GLM’,’BCT’};%分类⽅法
+yData=[7.78 7.16 7.75 9.06 1.94 5.47 6.19 3.44 6.38 1.81 9.03];%mean rank值
+n=size(cell,2);
+x=1:1:n;
+plot(x,yData,'k-',x,yData,'rs');
+ylabel(‘mean rank’);
+xlabel(‘Classification’);
+grid on;
+set(gca,’xtick’,x);
+set(gca,’xticklabel’,cell);

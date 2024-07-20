@@ -1,0 +1,20 @@
+function [outputArg1,outputArg2] = result(ret,alps,gams)
+%RESULT 此处显示有关此函数的摘要
+%   此处显示详细说明
+    for i = 1 : 2 : 55
+        for k = 1 : 50
+            mir_x(i,k) = ret(:,i) * cos(k * pi / 25);
+            mir_y(i,k) = ret(:,i) * sin(k * pi / 25);
+            mir_z(i,k) = ret(:,end) ;
+        end
+    end
+    for i = 2 : 2 : 55
+        for k = 1 : 50
+            mir_x(i,k) = ret(:,i) * cos(( 2 * k * pi + pi)/50);
+            mir_y(i,k) = ret(:,i) * sin((2 * k * pi + pi)/50);
+            mir_z(i,k) = ret(:,end) ;
+        end
+    end
+    writematrix(mir_x,'太阳高度角和方位角.xlsx','Sheet',1,'Range','B2 :F366');
+end
+

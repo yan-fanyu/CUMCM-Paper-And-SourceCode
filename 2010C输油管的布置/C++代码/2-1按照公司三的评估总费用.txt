@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+#include<math.h>
+
+void main()
+
+{
+    double h1,h2,w;
+	
+double a,b;
+	
+double min = 10000;
+	
+for(h1=0;h1<=8;h1+=0.001)
+		
+for(h2=0;h2<=8;h2+=0.001)
+		
+{
+			if(h1+h2>8)
+				continue;
+				w=27.2*sqrt(25+h2*h2)+(sqrt((5-h1+8-h1-h2)*(5-h1+8-h1-h2)+225)+h1)*7.2;
+				
+if(min>w)
+				
+{
+					min=w;
+					
+a=h1;
+					
+b=h2;
+				}
+		}
+			printf("%f \n",min);
+			
+printf("%f  %f \n",a,b);
+}

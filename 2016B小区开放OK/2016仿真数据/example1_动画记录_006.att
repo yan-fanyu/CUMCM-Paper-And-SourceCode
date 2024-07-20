@@ -1,0 +1,22 @@
+﻿$VISION
+* 文件:		C:\Users\Yan\Desktop\example1.inpx
+* 注释:	
+* 日期:		2022/7/9 16:08:26
+* Application:	PTV Vissim 2022.00-03 [238688]
+* 
+* 表: 动画记录
+* 
+* NO: 编号, 编号 (Unique number of the animation recording)
+* NAME: 名称, 名称 (Animation name)
+* RECANIM: 记录动画, 记录动画 (Recording an animation:  If this option is selected, the animation is recorded when you select Record Animation in the Presentation menu)
+* FILENAME: 文件名称, 文件名称 (Name of the *.ani or *.txt file where the simulation is saved as an animation. Make sure that after the filename, depending on the selection available in the Type attribute, the *.ani or *.txt extension you desire is displayed.)
+* TYPE: 类型, 类型 (For export (*.ani.txt): Saves the animation in a TXT file. For Replay (*.ani): Saves the animation to a ANI file that you can replay.)
+* START: 开始, 开始 (Simulation second when recording starts) [s]
+* END: 结束, 结束 (Simulation second when recording ends. If you define multiple animation recordings, avoid creating overlaps between the time intervals.) [s]
+* SECTIONS: 截面, 截面 (Number of sections to be recorded. No number: The entire network will be recorded.)
+* 
+* 编号;名称;记录动画;文件名称;类型;开始;结束;截面
+* 编号;名称;记录动画;文件名称;类型;开始;结束;截面
+*
+$ANIMREC:NO;NAME;RECANIM;FILENAME;TYPE;START;END;SECTIONS
+

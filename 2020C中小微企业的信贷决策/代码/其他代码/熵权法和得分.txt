@@ -1,0 +1,51 @@
+import numpy as np
+import pandas as pd
+
+## 读取数据
+data=pd.read_csv('data6.csv',encoding='utf-8',index_col=0)
+indicator=data.columns.tolist()   ## 指标个数   多少列
+project=data.index.tolist()       ## 样本个数   多少行
+value=data.values
+print("value = ", value)
+
+
+
+## 定义数据标准化函数。为了避免求熵值时对数无意义，对数据进行平移，对标准化后的数据统一加了常数0.001
+def std_data(value,flag):
+    for i in range(len(indicator)):
+        if flag[i]=='+':
+            value[:,i]=(value[:,i]-np.min(value[:,i],axis=0))/(np.max(value[:,i],axis=0)-np.min(value[:,i],axis=0))+0.01
+        elif flag[i]=='-':
+            value[:,i]=(np.max(value[:,i],axis=0)-value[:,i])/(np.max(value[:,i],axis=0)-np.min(value[:,i],axis=0))+0.01
+    return value
+
+
+
+# 定义熵值法函数、熵值法计算变量的权重
+def cal_weight(indicator, project, value):
+    p = np.array([[0.0 for i in range(len(indicator))] for i in range(len(project))])
+    # print(p)
+    for i in range(len(indicator)):
+        p[:, i] = value[:, i] / np.sum(value[:, i], axis=0)
+
+    e = -1 / np.log(len(project)) * sum(p * np.log(p))  # 计算熵值
+    g = 1 - e  # 计算一致性程度
+    w = g / sum(g)  # 计算权重
+    return w
+
+
+
+# 调用函数将数据标准化，即为每个数据添加正相关还是负相关标志
+std_value=std_data(value, flag)
+
+# 调用函数求权重
+w = cal_weight(indicator, project, std_value)
+w = pd.DataFrame(w, index=data.columns, columns=['权重'])
+print(w)
+
+# 调用函数求得分
+score = np.dot(std_value, w).round(4)         # 对应数据与权重相乘得到分数，结果保留四位小数
+score = pd.DataFrame(score, index=data.index, columns=['综合得分']).sort_values(by=['综合得分'], ascending=False)
+print(score)
+
+score.to_excel("jieguo.xlsx")

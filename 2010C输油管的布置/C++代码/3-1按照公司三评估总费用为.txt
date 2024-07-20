@@ -1,0 +1,19 @@
+#include"stdio.h"
+#include"math.h"
+main()
+{ double x2,y2,y1,w,a,b,c,min=1000;
+  for(x2=-15;x2<=0;x2+=1)
+for(y1=0;y1<=8;y1+=1)
+for(y2=0;y2<=8;y2+=1)
+{
+w=5.6*sqrt((x2+15)*(x2+15)+(y2-5)*(y2-5))+6.0*sqrt((x2*x2)+(y1-y2)*(y1-y2))+26.0*sqrt(25+(8-y1)*(8-y1))+7.2*y2;
+		  if(min>w)
+		  {
+min=w;
+		     a=x2;
+b=y2;
+c=y1;
+}
+		}
+	   printf("min=%f \nx2=%f \ny2=%f \ny1=%f\n",min,a,b,c);
+}

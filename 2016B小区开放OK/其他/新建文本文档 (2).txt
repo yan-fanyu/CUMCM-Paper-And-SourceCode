@@ -1,0 +1,30 @@
+Column	Description
+ 
+t(enter)		Time when the vehicle´s front has passed the cross-section. Entry -1 indicates, that this happened before the current time step
+ 
+t(leave) 		Time when the vehicle´s end has passed the cross-section. Entry -1 indicates, that this has not happened yet.
+ 
+VehNo 		Internal number of the vehicle
+ 
+Type 		Vehicle type (e.g. 100 = car)
+ 
+Line		 Public transit line 
+ 
+v 		Speed (in m/s)
+ 
+a 		Acceleration (in [m/s²])
+ 
+Occ 		Occupancy: Time (in s) the vehicle has spent on the decision point in this simulation second
+ 
+Pers 		Number of persons in the vehicle
+ 
+tQueue 		Total time (in s) the vehicle has spent in congestion
+ 
+VLength 		Vehicle length (in [m])
+ 
+CatTemp 		Emission module only: Catalyst temperature (in °C)
+ 
+CoolTemp 	Emission module only: Cooling water temperature (in °C)
+ 
+DistX 		Total distance (in [m]) the vehicle has travelled in network.
+ 

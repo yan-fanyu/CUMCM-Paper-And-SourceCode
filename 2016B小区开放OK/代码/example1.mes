@@ -1,0 +1,19 @@
+
+Data Collection (Compiled Data)
+
+File:     d:\mathmode\2016\example1.inp
+Comment:  
+Date:     2022Äê7ÔÂ9ÈÕ 17:44:47
+
+Measurement     1: Data Collection Point(s) 1, 2, 3
+
+Measur.: Data Collection Number
+from: Start time of the Aggregation interval
+to: End time of the Aggregation interval
+Number Veh: Number of Vehicles
+Occup. Rate: Occupancy rate [%]
+
+Measur.;from;to;Number Veh;Occup. Rate
+       ;    ;  ;;
+       ;    ;  ;all veh. types;all veh. types
+1;0;3600;160;0.2

@@ -1,0 +1,3 @@
+function S=mubiao(c,ss);
+ss1=ss';
+t=ss1(find(c==0))=0
